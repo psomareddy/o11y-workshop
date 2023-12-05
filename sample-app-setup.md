@@ -47,7 +47,13 @@ sudo tail -f /var/log/syslog
 
 You can validate if the application is running by visiting http://<VM_IP_ADDRESS>:8080.
 
-Once your validation is complete you can stop the application by pressing Ctrl-C.
+Once your validation is complete you can stop the application by killing the java process.
+
+```cmd
+ps -ef | grep java
+
+kill {PID_PETCLINIC_PROCESS}
+```
 
 ## Generate Traffic
 
@@ -59,7 +65,7 @@ Next we will start a Docker container running Locust that will generate some sim
 
 ## Start the app again
 ```cmd
-./start.sh
+./run.sh
 ```
 
 ## Next Step
