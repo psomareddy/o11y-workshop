@@ -45,6 +45,10 @@ If you check the logs of the Splunk OpenTelemetry collector you will see that th
 sudo tail -f /var/log/syslog
 ```
 
+```cmd
+tail -f petclinic.log
+```
+
 You can validate if the application is running by visiting http://<VM_IP_ADDRESS>:8080.
 
 Once your validation is complete you can stop the application by killing the java process.

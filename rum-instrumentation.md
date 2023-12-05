@@ -58,6 +58,14 @@ Run the <mark style="background-color: #FDFDC9">maven</mark> command to compile/
 ./build.sh
 ```
 
+Restart the petclinic application by killing the java process and running the start script again.
+
+```cmd
+ps -ef | grep java
+
+kill {PID_PETCLINIC_PROCESS}
+```
+
 ```cmd
 ./run.sh
 ```
